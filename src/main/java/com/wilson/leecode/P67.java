@@ -14,70 +14,22 @@ public class P67 {
         int j = b.length() - 1;
 
         for (; i >= 0 && j >= 0; i--, j--) {
-            int r = add(a.charAt(i), b.charAt(j), jw);
-            switch (r) {
-                case 11:
-                    jw = '1';
-                    res[len--] = '1';
-                    break;
-                case 10:
-                    jw = '1';
-                    res[len--] = '0';
-                    break;
-                case 0:
-                    jw = '0';
-                    res[len--] = '0';
-                    break;
-                default: // case 1:
-                    jw = '0';
-                    res[len--] = '1';
-                    break;
-            }
+            int v = add(a.charAt(i), b.charAt(j), jw);
+            jw = v >= 10 ? '1' : '0';
+            res[len--] = v % 10 == 1 ? '1' : '0';
         }
 
         while (i >= 0) {
             int v = add(a.charAt(i), jw);
-            switch (v) {
-                case 11:
-                    jw = '1';
-                    res[len--] = '1';
-                    break;
-                case 10:
-                    jw = '1';
-                    res[len--] = '0';
-                    break;
-                case 0:
-                    jw = '0';
-                    res[len--] = '0';
-                    break;
-                default: // case 1:
-                    jw = '0';
-                    res[len--] = '1';
-                    break;
-            }
+            jw = v >= 10 ? '1' : '0';
+            res[len--] = v % 10 == 1 ? '1' : '0';
             i--;
         }
 
         while (j >= 0) {
             int v = add(b.charAt(j), jw);
-            switch (v) {
-                case 11:
-                    jw = '1';
-                    res[len--] = '1';
-                    break;
-                case 10:
-                    jw = '1';
-                    res[len--] = '0';
-                    break;
-                case 0:
-                    jw = '0';
-                    res[len--] = '0';
-                    break;
-                default: // case 1:
-                    jw = '0';
-                    res[len--] = '1';
-                    break;
-            }
+            jw = v >= 10 ? '1' : '0';
+            res[len--] = v % 10 == 1 ? '1' : '0';
             j--;
         }
 
