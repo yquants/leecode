@@ -1,4 +1,4 @@
-package com.wilson.leecode;
+package com.wilson.leecode.simple;
 
 public class P27 {
     public int removeElement(int[] nums, int val) {

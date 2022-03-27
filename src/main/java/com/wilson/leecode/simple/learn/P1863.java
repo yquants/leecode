@@ -1,4 +1,4 @@
-package com.wilson.leecode.learn;
+package com.wilson.leecode.simple.learn;
 
 /**
  * https://leetcode-cn.com/problems/sum-of-all-subset-xor-totals/
@@ -30,6 +30,7 @@ public class P1863 {
             int j_subArray = -1;
             int k_nums = len - 1;
             while (j_subArray++ < len) {
+                //通过 按位与 来确定最后一位是0还是1
                 if ((current & 1) == 1) {
                     subArray[j_subArray] = nums[k_nums];
                 }

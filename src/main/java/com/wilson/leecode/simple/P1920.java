@@ -1,4 +1,4 @@
-package com.wilson.leecode;
+package com.wilson.leecode.simple;
 
 /**
  * https://leetcode-cn.com/problems/build-array-from-permutation/

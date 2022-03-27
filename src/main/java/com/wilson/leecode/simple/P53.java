@@ -1,4 +1,4 @@
-package com.wilson.leecode;
+package com.wilson.leecode.simple;
 
 public class P53 {
     public int maxSubArray(int[] nums) {

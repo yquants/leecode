@@ -1,4 +1,4 @@
-package com.wilson.leecode.learn;
+package com.wilson.leecode.simple.learn;
 
 /**
  * https://leetcode-cn.com/problems/o8SXZn/

@@ -1,4 +1,4 @@
-package com.wilson.leecode;
+package com.wilson.leecode.simple;
 
 public class P26 {
     public int removeDuplicates(int[] nums) {
