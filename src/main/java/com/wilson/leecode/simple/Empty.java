@@ -1,7 +1,7 @@
 package com.wilson.leecode.simple;
 
 /**
- *
+ * 
  */
 public class Empty {
 
